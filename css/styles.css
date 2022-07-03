@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: url(../imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 90vw;
+    background-position: 25vw -10vw;
+}
+body{
+    background-image: url(../imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 75vw;
+    background-position: 60vw 100vw;
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5%;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    color: #FFFFFF;
+
+    width: 134px;
+    height: 44px;
+    left: 1140px;
+    top: 65px;
+
+    background: rgb(243, 96, 59);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+h1{
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 66px;
+    letter-spacing: -0.035em;
+    padding: 30px;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 48px;
+    padding: 30px;
+}
+h3{
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 23px;
+    width: 85vw;
+}
+header button{
+    display: none;
+}
+.barraDeNavegacion input {
+    display: none;
+}
+
+.barraDeNavegacion ul{
+    display: flex;
+    display: none;
+    list-style: none;
+    flex-direction: column;
+}
+.barraDeNavegacion input:checked ~ ul{
+    display: block;
+    position: absolute;
+    background-color: white;
+    text-align: left;
+    margin-right: 4rem;
+}
+.barraDeNavegacion li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 10px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0px 10%;
+}
+.home article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.home p{
+    margin: 30px;
+}
+.home img{
+    width: 100%;
+}
+.fraseHome p{
+    text-align: center;
+    color: #B3B2B7;
+}
+.sobreNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0px 10%;
+}
+.sobreNosotros article{
+    margin: 5%;
+}
+.sobreNosotros h2{
+    padding: 30px;
+}
+.sobreNosotros ul{
+    list-style: none;
+}
+.sobreNosotros li{
+    padding: 20px;
+}
+.sobreNosotros span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background: #F3603B;
+    
+    font-size: 0.75rem;
+    border-radius: 50px;
+    width: 60px;
+    height: 30px;
+    margin-right: 5px;
+}
+.sobreNosotros h3{
+    display: flex;
+    align-items: center;
+    background-color: rgba(243, 96, 59, 0.25);
+    border-radius: 50px 0 75px 50px;
+}
+.sobreNosotros p{
+    padding: 15px;
+    color: #B3B2B7;
+}
+.sobreNosotros li p{
+    text-align: left;
+}
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10%;
+}
+.testimonios h2{
+    line-height: 156.6%;
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.persona{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #FAFAFA;
+    margin: 50px 2%;
+}
+.persona img{
+    width: 80px;
+    position: relative;
+    top: -40px;
+}
+.persona h3{
+    font-weight: 700;
+    color: #3F4868;
+}
+.persona p{
+    font-weight: 600;
+    color: #B9B9C1;
+    padding: 5%;
+}
+.testimonios button{
+    margin: 50px;
+}
+.pie{
+/*
+    background-image: url(../imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 40vw;
+    background-position: -20vw 15vw;
+*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3613C;
+    padding: 50px;
+}
+.pie h2{
+    color: #FFFFFF;
+    padding: 30px;
+}
+#botonPie{
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #F3613C;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1E1E26;
+    color: #FFFFFF;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px;
+}
+#formulario input{
+    width: 70vw;
+    height: 44px;
+    left: 0.09px;
+    top: 2.26px;
+    
+    background: #FFFFFF;
+    color: #A0A0A0;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    text-align: left;
+    padding: 20px;
+    
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 9px;
+}
+#formulario button{
+    width: 20vw;
+}
+form{
+    display: flex;
+}
+.navFooter{
+    font-display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%;
+}
+.navFooter ul{
+    font-display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.navFooter li{
+    font-display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+}
+.navFooter a{
+    color: #ffffff44;
+}
+.linksFooter{
+    display: flex;
+    justify-content: space-around;
+}
+.linksFooter :first-child{
+    margin-right: 2rem;
+}
+.linksFooter a{
+    color: #FFFFFF;
+}
+.redes {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    margin: 5%;
+}
+.redes a{
+    margin: 5px;
+}
+footer p{
+    color: #8C8C94;
+    margin: 30px;
+}
+.logoFooter{
+    margin: 15px;
+}
+.derechosDesktop{
+    display: none;
+}
+
+@media (min-width: 780px) {
+    html{
+        background-size: 50vw;
+        background-position: 50vw -10vw;
+    }
+    body{
+        background-size: 35vw;
+        background-position: -20vw 80vw;
+    }
+    h1{
+        text-align: left;
+    }
+    h3{
+        font-size: 1.25rem;
+        width: 30vw;
+    }
+    .sobreNosotros span{
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+    .navegacion{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    header button{
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    #hamburguesa{
+        display: none;
+    }
+    .barraDeNavegacion{
+        display: flex;
+        flex-direction: row;
+    }
+    .barraDeNavegacion ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .home{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .home article{
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .fraseHome p{
+        text-align: left;
+    }
+    .graficos img{
+        width: 40vw;
+    }
+    .sobreNosotros{
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: flex-start;
+        text-align: left;
+    }
+    .sobreNosotros h2, .sobreNosotros h3, .sobreNosotros p{
+        text-align: left;
+        background-color: white;
+    }
+    .testimonios{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+    }
+    .persona{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .persona h3{
+        text-align: center;
+    }
+    .persona p{
+        text-align: center;
+    }
+    .pie{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+    }
+    .pie h2{
+        text-align: left;
+        width: 40vw;
+    }
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 30px;
+    }
+    .links{
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 25%;
+    }
+    .navFooter{
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #formulario{
+        margin: 0;
+    }
+    footer div{
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .linksFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #formulario input{
+        width: 250px;
+        height: 44px;
+        left: 0.09px;
+        top: 2.26px;
+    }
+    #formulario button{
+        width: 100px;
+    }
+    .derechosMobile{
+        display: none;
+    }
+    .derechosDesktop{
+        display: contents;
+    }
+}
+.barraDeNavegacion li:hover{
+    opacity: 0.5;
+}
+#hamburguesa:hover{
+    cursor: pointer;
+}
+button:hover{
+    background: rgba(243, 96, 59, 0.4);
+    cursor: pointer;
+}
+footer button:hover{
+    background-color: rgba(150, 150, 150, 0.25);
+}
+.linksFooter a:hover{
+    color: #F3613C;
+}
+.redes a:hover .link{
+    fill: #F3613C;
+}
+footer input[type="email"]:invalid{
+    border: 4px solid red;
+}
+footer input[type="email"]:valid{
+    border: 2px solid grey;
+}
